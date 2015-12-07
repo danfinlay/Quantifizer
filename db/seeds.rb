@@ -15,6 +15,7 @@ type = LogType.create({
     log_type_id: type.id,
     start_time: Time.now + i.days * 2,
     end_time: Time.now + (i.days * 2) + 1,
-    data: 'Happy'
+    data: 'Happy',
+    user_id: user.id,
   })
 end

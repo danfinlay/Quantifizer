@@ -1,3 +1,6 @@
 class LogTypeSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id,
+    :title,
+    :description,
+    :has_duration
 end
