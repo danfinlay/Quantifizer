@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  log_type_id: 1
+  start_time: 2015-12-06
+  end_time: 2015-12-06
+  data: MyText
+
+two:
+  log_type_id: 1
+  start_time: 2015-12-06
+  end_time: 2015-12-06
+  data: MyText
