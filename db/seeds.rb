@@ -1,4 +1,6 @@
 user = User.create({
+  first_name: 'Dan',
+  last_name: 'Finlay',
   email: 'dan@danfinlay.com',
   password: 'password',
   auth_token: 'auth_token'
