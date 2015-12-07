@@ -1,4 +1,6 @@
 Quantifizer::Application.routes.draw do
+  get :token, controller: 'application'
+
   resources :logs, except: [:new, :edit]
   resources :log_types, except: [:new, :edit]
   resources :users, except: [:new, :edit]
