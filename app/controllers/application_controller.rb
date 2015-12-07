@@ -23,8 +23,9 @@ def authenticate_user_from_token
 
   # Allow easy impersonation in development
   if Rails.env.development? and
-     params[:mode] == 'test'
-    return User.first
+     params.has_key?("impersonate")
+    puts params
+    return User.find(params["impersonate"])
   end
 
   unless authenticate_with_http_token { |token, options| User.find_by(auth_token: token) }
