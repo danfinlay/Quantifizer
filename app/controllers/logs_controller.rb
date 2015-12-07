@@ -4,7 +4,10 @@ class LogsController < ApplicationController
   # GET /logs
   # GET /logs.json
   def index
-    @logs = Log.all
+    @logs = Log
+    .order(start_time: :desc)
+    .limit(100)
+    .offset(params[:offset])
 
     render json: @logs
   end
