@@ -9,7 +9,7 @@ gem 'rails-api'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
-
+gem 'active_model_serializers', '~> 0.8.3'
 
 
 # To use ActiveModel has_secure_password
